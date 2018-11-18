@@ -22,7 +22,7 @@ namespace BugTrackingSystem.com.bugtracking.View
 
         private void newErrorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddErrorForm addError = new AddErrorForm();
+            AddBugForm addError = new AddBugForm();
             addError.Visible = true;
 
         }

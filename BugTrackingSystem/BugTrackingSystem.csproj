@@ -48,11 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="com.bugtracking.Controller\LoginController.cs" />
-    <Compile Include="com.bugtracking.View\AddErrorForm.cs">
+    <Compile Include="com.bugtracking.View\AddBugForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\AddErrorForm.Designer.cs">
-      <DependentUpon>AddErrorForm.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\AddBugForm.Designer.cs">
+      <DependentUpon>AddBugForm.cs</DependentUpon>
     </Compile>
     <Compile Include="com.bugtracking.View\AssignedBugsForm.cs">
       <SubType>Form</SubType>
@@ -65,6 +65,36 @@
     </Compile>
     <Compile Include="com.bugtracking.View\BugDetailsForm.Designer.cs">
       <DependentUpon>BugDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AssignUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\AssignUser.Designer.cs">
+      <DependentUpon>AssignUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewUser.Designer.cs">
+      <DependentUpon>ViewUser.cs</DependentUpon>
     </Compile>
     <Compile Include="com.bugtracking.View\Dashboard.cs">
       <SubType>Form</SubType>
@@ -81,14 +111,29 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="com.bugtracking.View\AddErrorForm.resx">
-      <DependentUpon>AddErrorForm.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\AddBugForm.resx">
+      <DependentUpon>AddBugForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="com.bugtracking.View\AssignedBugsForm.resx">
       <DependentUpon>AssignedBugsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="com.bugtracking.View\BugDetailsForm.resx">
       <DependentUpon>BugDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\AssignUSer.resx">
+      <DependentUpon>AssignUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewUser.resx">
+      <DependentUpon>ViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="com.bugtracking.View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -120,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="com.bugtracking.Model\" />
-    <Folder Include="com.bugtracking.View\com.bugtracking.View.Admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace BugTrackingSystem.com.bugtracking.View
 
         private void btn_log_Click(object sender, EventArgs e)
         {
-            LoginController loginController = new LoginController();
+            /*LoginController loginController = new LoginController();
             String user = loginController.SelectUser(txt_email.Text);
             if (txt_email.Text.Equals(user))
             {
@@ -30,7 +30,10 @@ namespace BugTrackingSystem.com.bugtracking.View
             else
             {
                 MessageBox.Show("Something went wrong!!!");
-            }
+            }*/
+
+            BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AddProject addProject = new com.bugtracking.View.Admin.AddProject();
+            addProject.Show();
 
             //Dashboard dashboard = new Dashboard();
             //dashboard.Visible = true;

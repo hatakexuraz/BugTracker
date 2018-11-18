@@ -6,7 +6,6 @@ C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\Bu
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.exe
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.pdb
-C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.AddErrorForm.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.AssignedBugsForm.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.BugDetailsForm.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.Dashboard.resources
@@ -16,3 +15,9 @@ C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\bin\Debug\Go
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\bin\Debug\MySql.Data.xml
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.csproj.CopyComplete
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.csprojAssemblyReference.cache
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.AddBugForm.resources
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AddProject.resources
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AddUser.resources
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AdminDashboard.resources
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AssignUser.resources
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.ViewUser.resources
