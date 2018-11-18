@@ -1,6 +1,6 @@
-﻿namespace BugTrackingSystem
+﻿namespace BugTrackingSystem.com.bugtracking.View
 {
-    partial class dashboard
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,178 +30,144 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_ttlerr = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_reerr = new System.Windows.Forms.Label();
             this.lbl_unreerr = new System.Windows.Forms.Label();
-            this.btn_err = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btn_asn_err = new System.Windows.Forms.Button();
-            this.btn_report = new System.Windows.Forms.Button();
-            this.btn_viewerr = new System.Windows.Forms.Button();
-            this.btn_adderr = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_reerr = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.errorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assignedBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 43);
+            this.label1.Location = new System.Drawing.Point(23, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 14;
             this.label1.Text = "Total errors";
             // 
             // lbl_ttlerr
             // 
             this.lbl_ttlerr.AutoSize = true;
-            this.lbl_ttlerr.Location = new System.Drawing.Point(136, 43);
+            this.lbl_ttlerr.Location = new System.Drawing.Point(137, 56);
             this.lbl_ttlerr.Name = "lbl_ttlerr";
             this.lbl_ttlerr.Size = new System.Drawing.Size(13, 13);
-            this.lbl_ttlerr.TabIndex = 2;
+            this.lbl_ttlerr.TabIndex = 15;
             this.lbl_ttlerr.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Resolved errors";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Unresolved errors";
-            // 
-            // lbl_reerr
-            // 
-            this.lbl_reerr.AutoSize = true;
-            this.lbl_reerr.Location = new System.Drawing.Point(136, 80);
-            this.lbl_reerr.Name = "lbl_reerr";
-            this.lbl_reerr.Size = new System.Drawing.Size(13, 13);
-            this.lbl_reerr.TabIndex = 5;
-            this.lbl_reerr.Text = "0";
             // 
             // lbl_unreerr
             // 
             this.lbl_unreerr.AutoSize = true;
-            this.lbl_unreerr.Location = new System.Drawing.Point(136, 122);
+            this.lbl_unreerr.Location = new System.Drawing.Point(137, 135);
             this.lbl_unreerr.Name = "lbl_unreerr";
             this.lbl_unreerr.Size = new System.Drawing.Size(13, 13);
-            this.lbl_unreerr.TabIndex = 6;
+            this.lbl_unreerr.TabIndex = 19;
             this.lbl_unreerr.Text = "0";
             // 
-            // btn_err
+            // label2
             // 
-            this.btn_err.Location = new System.Drawing.Point(11, 36);
-            this.btn_err.Name = "btn_err";
-            this.btn_err.Size = new System.Drawing.Size(120, 27);
-            this.btn_err.TabIndex = 7;
-            this.btn_err.Text = "Errors";
-            this.btn_err.UseVisualStyleBackColor = true;
-            this.btn_err.Click += new System.EventHandler(this.btn_err_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Resolved errors";
             // 
-            // splitContainer1
+            // lbl_reerr
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(1, 2);
-            this.splitContainer1.Name = "splitContainer1";
+            this.lbl_reerr.AutoSize = true;
+            this.lbl_reerr.Location = new System.Drawing.Point(137, 93);
+            this.lbl_reerr.Name = "lbl_reerr";
+            this.lbl_reerr.Size = new System.Drawing.Size(13, 13);
+            this.lbl_reerr.TabIndex = 18;
+            this.lbl_reerr.Text = "0";
             // 
-            // splitContainer1.Panel1
+            // label3
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.btn_asn_err);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_report);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_viewerr);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_adderr);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_err);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Unresolved errors";
             // 
-            // splitContainer1.Panel2
+            // menuStrip1
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
-            this.splitContainer1.Panel2.Controls.Add(this.lbl_ttlerr);
-            this.splitContainer1.Panel2.Controls.Add(this.lbl_unreerr);
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.lbl_reerr);
-            this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Size = new System.Drawing.Size(798, 447);
-            this.splitContainer1.SplitterDistance = 196;
-            this.splitContainer1.TabIndex = 8;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.errorsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 20;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btn_asn_err
+            // errorsToolStripMenuItem
             // 
-            this.btn_asn_err.Location = new System.Drawing.Point(37, 135);
-            this.btn_asn_err.Name = "btn_asn_err";
-            this.btn_asn_err.Size = new System.Drawing.Size(120, 27);
-            this.btn_asn_err.TabIndex = 11;
-            this.btn_asn_err.Text = "Assigned Errors";
-            this.btn_asn_err.UseVisualStyleBackColor = true;
+            this.errorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newErrorToolStripMenuItem,
+            this.viewBugsToolStripMenuItem,
+            this.assignedBugsToolStripMenuItem});
+            this.errorsToolStripMenuItem.Name = "errorsToolStripMenuItem";
+            this.errorsToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.errorsToolStripMenuItem.Text = "Bugs";
             // 
-            // btn_report
+            // newErrorToolStripMenuItem
             // 
-            this.btn_report.Location = new System.Drawing.Point(11, 168);
-            this.btn_report.Name = "btn_report";
-            this.btn_report.Size = new System.Drawing.Size(120, 27);
-            this.btn_report.TabIndex = 10;
-            this.btn_report.Text = "Bug Report";
-            this.btn_report.UseVisualStyleBackColor = true;
+            this.newErrorToolStripMenuItem.Name = "newErrorToolStripMenuItem";
+            this.newErrorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newErrorToolStripMenuItem.Text = "New Bugs";
+            this.newErrorToolStripMenuItem.Click += new System.EventHandler(this.newErrorToolStripMenuItem_Click);
             // 
-            // btn_viewerr
+            // viewBugsToolStripMenuItem
             // 
-            this.btn_viewerr.Location = new System.Drawing.Point(37, 102);
-            this.btn_viewerr.Name = "btn_viewerr";
-            this.btn_viewerr.Size = new System.Drawing.Size(120, 27);
-            this.btn_viewerr.TabIndex = 9;
-            this.btn_viewerr.Text = "View Error";
-            this.btn_viewerr.UseVisualStyleBackColor = true;
+            this.viewBugsToolStripMenuItem.Name = "viewBugsToolStripMenuItem";
+            this.viewBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewBugsToolStripMenuItem.Text = "View Bugs";
             // 
-            // btn_adderr
+            // assignedBugsToolStripMenuItem
             // 
-            this.btn_adderr.Location = new System.Drawing.Point(37, 69);
-            this.btn_adderr.Name = "btn_adderr";
-            this.btn_adderr.Size = new System.Drawing.Size(120, 27);
-            this.btn_adderr.TabIndex = 8;
-            this.btn_adderr.Text = "New Error";
-            this.btn_adderr.UseVisualStyleBackColor = true;
+            this.assignedBugsToolStripMenuItem.Name = "assignedBugsToolStripMenuItem";
+            this.assignedBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.assignedBugsToolStripMenuItem.Text = "Assigned Bugs";
             // 
-            // dashboard
+            // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.splitContainer1);
-            this.Name = "dashboard";
-            this.Text = "dashboard";
-            this.Load += new System.EventHandler(this.dashboard_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_ttlerr);
+            this.Controls.Add(this.lbl_unreerr);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_reerr);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.menuStrip1);
+            this.Name = "Dashboard";
+            this.Text = "Dashboard";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_ttlerr;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lbl_reerr;
         private System.Windows.Forms.Label lbl_unreerr;
-        private System.Windows.Forms.Button btn_err;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button btn_viewerr;
-        private System.Windows.Forms.Button btn_adderr;
-        private System.Windows.Forms.Button btn_report;
-        private System.Windows.Forms.Button btn_asn_err;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_reerr;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem errorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newErrorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewBugsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem assignedBugsToolStripMenuItem;
     }
 }

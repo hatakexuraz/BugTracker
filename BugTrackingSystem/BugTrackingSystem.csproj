@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,52 +47,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="com.bugtracking.View\AddError.cs">
+    <Compile Include="com.bugtracking.Controller\LoginController.cs" />
+    <Compile Include="com.bugtracking.View\AddErrorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\AddError.Designer.cs">
-      <DependentUpon>AddError.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\AddErrorForm.Designer.cs">
+      <DependentUpon>AddErrorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="com.bugtracking.View\AssignedBugs.cs">
+    <Compile Include="com.bugtracking.View\AssignedBugsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\AssignedBugs.Designer.cs">
-      <DependentUpon>AssignedBugs.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\AssignedBugsForm.Designer.cs">
+      <DependentUpon>AssignedBugsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="com.bugtracking.View\BugDetails.cs">
+    <Compile Include="com.bugtracking.View\BugDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\BugDetails.Designer.cs">
-      <DependentUpon>BugDetails.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\BugDetailsForm.Designer.cs">
+      <DependentUpon>BugDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="com.bugtracking.View\dashboard.cs">
+    <Compile Include="com.bugtracking.View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\dashboard.Designer.cs">
-      <DependentUpon>dashboard.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="com.bugtracking.View\Login.cs">
+    <Compile Include="com.bugtracking.View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="com.bugtracking.View\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="com.bugtracking.View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="com.bugtracking.View\AddError.resx">
-      <DependentUpon>AddError.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\AddErrorForm.resx">
+      <DependentUpon>AddErrorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="com.bugtracking.View\AssignedBugs.resx">
-      <DependentUpon>AssignedBugs.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\AssignedBugsForm.resx">
+      <DependentUpon>AssignedBugsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="com.bugtracking.View\BugDetails.resx">
-      <DependentUpon>BugDetails.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\BugDetailsForm.resx">
+      <DependentUpon>BugDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="com.bugtracking.View\dashboard.resx">
-      <DependentUpon>dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="com.bugtracking.View\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="com.bugtracking.View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +117,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="com.bugtracking.Model\" />
+    <Folder Include="com.bugtracking.View\com.bugtracking.View.Admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,32 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BugTrackingSystem
+namespace BugTrackingSystem.com.bugtracking.View
 {
-    public partial class dashboard : Form
+    public partial class Dashboard : Form
     {
-        public dashboard()
+        public Dashboard()
         {
             InitializeComponent();
-            btn_adderr.Visible(false);
-            btn_viewerr.Visible(false);
-            btn_asn_err.Visible{ };
+
+            LoginForm loginForm = new LoginForm();
+            loginForm.Visible = false;
         }
 
-        private void dashboard_Load(object sender, EventArgs e)
+        private void newErrorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AddErrorForm addError = new AddErrorForm();
+            addError.Visible = true;
 
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btn_err_Click(object sender, EventArgs e)
-        {
-            btn_adderr.Visible(false);
-            btn_viewerr.Visible(false);
         }
     }
 }
