@@ -15,8 +15,6 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
         public AddProject()
         {
             InitializeComponent();
-
-            cmb_startdate.Items.Add(DateTime.Now.ToString("dd/MM/yyyy hh:mm"));
         }
     }
 }

@@ -8,17 +8,16 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem.com.bugtracking.Controller
 {
-    
-    class LoginController
+
+    class ConnectionController
     {
-        private MySqlConnection connection;
-        private MySqlCommand command;
+        public static MySqlConnection connection;
         private string server;
         private string database;
         private string uid;
         private string password;
 
-        public LoginController()
+        public ConnectionController()
         {
             Initialize();
         }
@@ -38,7 +37,7 @@ namespace BugTrackingSystem.com.bugtracking.Controller
         }
 
         //open connection to database
-        public bool OpenConnection()
+        public static bool OpenConnection()
         {
             try
             {
@@ -62,7 +61,7 @@ namespace BugTrackingSystem.com.bugtracking.Controller
         }
 
         //Close connection
-        public bool CloseConnection()
+        public static bool CloseConnection()
         {
             try
             {
@@ -74,72 +73,6 @@ namespace BugTrackingSystem.com.bugtracking.Controller
                 MessageBox.Show(ex.Message);
                 return false;
             }
-        }
-
-        public string SelectUser(string name)
-        {
-            Console.WriteLine(name);
-            String user_name;
-            String query = "Select * from people where name = '"+name+"'";
-
-            if (this.OpenConnection() == true)
-            {
-                command = new MySqlCommand(query, connection);
-                MySqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    user_name = reader["name"].ToString();
-                    return user_name;
-                }
-            }
-            return null;
-        }
-
-        //Insert statement
-        public void Insert()
-        {
-            string query = "INSERT INTO people (name) VALUES ('Test')";
-
-            if (this.OpenConnection() == true)
-            {
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                cmd.ExecuteNonQuery();
-
-                this.CloseConnection();
-            }
-
-        }
-
-        //Update statement
-        public void Update()
-        {
-        }
-
-        //Delete statement
-        public void Delete()
-        {
-        }
-
-        //Select statement
-        /*public List<string>[] Select()
-        {
-        }
-
-        //Count statement
-        public int Count()
-        {
-        }*/
-
-        //Backup
-        public void Backup()
-        {
-        }
-
-        //Restore
-        public void Restore()
-        {
         }
     }
 }

@@ -22,6 +22,9 @@ namespace BugTrackingSystem.com.bugtracking.View
         {
             /*LoginController loginController = new LoginController();
             String user = loginController.SelectUser(txt_email.Text);
+
+            Console.WriteLine("Returned: "+user);
+
             if (txt_email.Text.Equals(user))
             {
                 Dashboard dashboard = new Dashboard();
@@ -32,11 +35,12 @@ namespace BugTrackingSystem.com.bugtracking.View
                 MessageBox.Show("Something went wrong!!!");
             }*/
 
-            BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AddProject addProject = new com.bugtracking.View.Admin.AddProject();
-            addProject.Show();
-
             //Dashboard dashboard = new Dashboard();
             //dashboard.Visible = true;
+
+            AdminController adminController = new AdminController();
+
+            adminController.insertUser(txt_email.Text);
         }
     }
 }
