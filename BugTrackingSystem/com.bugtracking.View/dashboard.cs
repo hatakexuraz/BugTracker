@@ -26,5 +26,11 @@ namespace BugTrackingSystem.com.bugtracking.View
             addError.Visible = true;
 
         }
+
+        private void assignedBugsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AssignedBugsForm assignedBugs = new AssignedBugsForm();
+            assignedBugs.Show();
+        }
     }
 }

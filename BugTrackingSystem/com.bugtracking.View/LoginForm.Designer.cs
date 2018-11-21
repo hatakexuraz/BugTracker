@@ -30,7 +30,7 @@
         {
             this.btn_cnl = new System.Windows.Forms.Button();
             this.btn_login = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_type = new System.Windows.Forms.ComboBox();
             this.txt_pwd = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.lbl_post = new System.Windows.Forms.Label();
@@ -57,18 +57,18 @@
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_log_Click);
             // 
-            // comboBox1
+            // cmb_type
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_type.FormattingEnabled = true;
+            this.cmb_type.Items.AddRange(new object[] {
             "Programmer",
             "Tester",
             "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(92, 92);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 24);
-            this.comboBox1.TabIndex = 21;
+            this.cmb_type.Location = new System.Drawing.Point(92, 92);
+            this.cmb_type.Name = "cmb_type";
+            this.cmb_type.Size = new System.Drawing.Size(215, 24);
+            this.cmb_type.TabIndex = 21;
             // 
             // txt_pwd
             // 
@@ -123,7 +123,7 @@
             this.ClientSize = new System.Drawing.Size(327, 191);
             this.Controls.Add(this.btn_cnl);
             this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmb_type);
             this.Controls.Add(this.txt_pwd);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.lbl_post);
@@ -140,7 +140,7 @@
 
         private System.Windows.Forms.Button btn_cnl;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_type;
         private System.Windows.Forms.TextBox txt_pwd;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label lbl_post;

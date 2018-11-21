@@ -50,6 +50,7 @@
     <Compile Include="com.bugtracking.Controller\AdminController.cs" />
     <Compile Include="com.bugtracking.Controller\ConnectionController.cs" />
     <Compile Include="com.bugtracking.Controller\LoginController.cs" />
+    <Compile Include="com.bugtracking.Controller\UserController.cs" />
     <Compile Include="com.bugtracking.View\AddBugForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -62,14 +62,14 @@
             // newUserToolStripMenuItem
             // 
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
-            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.newUserToolStripMenuItem.Text = "New User";
             this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
             // 
             // viewUserToolStripMenuItem
             // 
             this.viewUserToolStripMenuItem.Name = "viewUserToolStripMenuItem";
-            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.viewUserToolStripMenuItem.Text = "View User";
             this.viewUserToolStripMenuItem.Click += new System.EventHandler(this.viewUserToolStripMenuItem_Click);
             // 
@@ -86,19 +86,19 @@
             // newProjectToolStripMenuItem
             // 
             this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
-            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.newProjectToolStripMenuItem.Text = "New Project";
             // 
             // viewProjectsToolStripMenuItem
             // 
             this.viewProjectsToolStripMenuItem.Name = "viewProjectsToolStripMenuItem";
-            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.viewProjectsToolStripMenuItem.Text = "View Projects";
             // 
             // assignUsersToolStripMenuItem
             // 
             this.assignUsersToolStripMenuItem.Name = "assignUsersToolStripMenuItem";
-            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.assignUsersToolStripMenuItem.Text = "Assign Users";
             // 
             // AdminDashboard
@@ -109,7 +109,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdminDashboard";
-            this.Text = "Dashboard";
+            this.Text = "Admin Dashboard";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

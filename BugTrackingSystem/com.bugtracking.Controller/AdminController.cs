@@ -15,9 +15,9 @@ namespace BugTrackingSystem.com.bugtracking.Controller
             connectionController = new ConnectionController();
         }
 
-        public int insertUser(string email)
+        public int insertUser(string email, string password, string type)
         {
-            string query = "insert into people(name) values('" + email + "')";
+            string query = "insert into user(email, password, type) values('" + email + "', '"+password+"', '"+type+"')";
             int result = 0;
 
             if (ConnectionController.OpenConnection() == true)

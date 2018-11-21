@@ -134,6 +134,7 @@
             this.assignedBugsToolStripMenuItem.Name = "assignedBugsToolStripMenuItem";
             this.assignedBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.assignedBugsToolStripMenuItem.Text = "Assigned Bugs";
+            this.assignedBugsToolStripMenuItem.Click += new System.EventHandler(this.assignedBugsToolStripMenuItem_Click);
             // 
             // Dashboard
             // 

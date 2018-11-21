@@ -25,7 +25,7 @@ namespace BugTrackingSystem.com.bugtracking.Controller
         private void Initialize()
         {
             server = "localhost";
-            database = "test2";
+            database = "bugtracking";
             uid = "root";
             password = "";
             String connectionString;

@@ -100,6 +100,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Programmer",
+            "Tester",
+            "Manager",
+            "Designer"});
             this.comboBox1.Location = new System.Drawing.Point(118, 125);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(223, 21);

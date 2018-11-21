@@ -11,103 +11,46 @@ namespace BugTrackingSystem.com.bugtracking.Controller
     
     class LoginController
     {
-        private MySqlConnection connection;
-        private MySqlCommand command;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
+        private ConnectionController connectionController;
 
         public LoginController()
         {
-            Initialize();
+            connectionController = new ConnectionController();
         }
 
-        private void Initialize()
+        public int SelectUser(string email, string password)
         {
-            server = "localhost";
-            database = "test2";
-            uid = "root";
-            password = "";
-            String connectionString;
+            int u_id = 0;
 
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-                database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+            String query = "Select * from user where email = '"+email+"' and password = '"+password+"'";
 
-            connection = new MySqlConnection(connectionString);
-        }
-
-        //open connection to database
-        public bool OpenConnection()
-        {
-            try
+            if (ConnectionController.OpenConnection() == true)
             {
-                connection.Open();
-                return true;
-            }
-            catch (MySqlException ex)
-            {
-                switch (ex.Number)
-                {
-                    case 0:
-                        MessageBox.Show("Cannot connect to server. Contact admin");
-                        break;
-
-                    case 1045:
-                        MessageBox.Show("Invalid username/password, please try again");
-                        break;
-                }
-                return false;
-            }
-        }
-
-        //Close connection
-        public bool CloseConnection()
-        {
-            try
-            {
-                connection.Close();
-                return true;
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        public string SelectUser(string name)
-        {
-            Console.WriteLine(name);
-            String user_name;
-            String query = "Select * from people where name = '"+name+"'";
-
-            if (this.OpenConnection() == true)
-            {
-                command = new MySqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, ConnectionController.connection);
                 MySqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    user_name = reader["name"].ToString();
-                    return user_name;
+                    u_id = (int) reader["user_id"];
                 }
             }
-            return null;
+            ConnectionController.CloseConnection();
+
+            return u_id;
         }
 
         //Insert statement
         public void Insert()
         {
-            string query = "INSERT INTO people (name) VALUES ('Test')";
+            string query = "INSERT INTO bugs (bug_desc, bug_pic, project_id, user_id) VALUES ('')";
 
-            if (this.OpenConnection() == true)
+            if (ConnectionController.OpenConnection() == true)
             {
-                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlCommand cmd = new MySqlCommand(query, ConnectionController.connection);
 
                 cmd.ExecuteNonQuery();
 
-                this.CloseConnection();
+                ConnectionController.CloseConnection();
             }
 
         }

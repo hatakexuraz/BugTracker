@@ -34,12 +34,13 @@
             // 
             // tbl_view_bugs
             // 
-            this.tbl_view_bugs.BackgroundColor = System.Drawing.Color.DimGray;
+            this.tbl_view_bugs.BackgroundColor = System.Drawing.Color.White;
             this.tbl_view_bugs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbl_view_bugs.Location = new System.Drawing.Point(3, 2);
             this.tbl_view_bugs.Name = "tbl_view_bugs";
             this.tbl_view_bugs.Size = new System.Drawing.Size(711, 250);
             this.tbl_view_bugs.TabIndex = 0;
+            this.tbl_view_bugs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_view_bugs_CellContentClick);
             // 
             // AssignedBugsForm
             // 

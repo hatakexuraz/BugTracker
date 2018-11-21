@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BugTrackingSystem.com.bugtracking.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,18 @@ namespace BugTrackingSystem.com.bugtracking.View
 {
     public partial class AssignedBugsForm : Form
     {
+        private UserController userController;
+
         public AssignedBugsForm()
         {
             InitializeComponent();
+
+            userController = new UserController();
+
+            tbl_view_bugs.DataSource = userController.retriveProject();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void tbl_view_bugs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
