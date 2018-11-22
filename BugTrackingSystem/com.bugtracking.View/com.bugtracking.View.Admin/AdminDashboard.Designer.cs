@@ -41,35 +41,42 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
             this.bugsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(3, 64);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(823, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(239, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newUserToolStripMenuItem,
             this.viewUserToolStripMenuItem});
+            this.userToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.userToolStripMenuItem.Text = "User";
             // 
             // newUserToolStripMenuItem
             // 
+            this.newUserToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
-            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.newUserToolStripMenuItem.Text = "New User";
             this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
             // 
             // viewUserToolStripMenuItem
             // 
+            this.viewUserToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.viewUserToolStripMenuItem.Name = "viewUserToolStripMenuItem";
-            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.viewUserToolStripMenuItem.Text = "View User";
             this.viewUserToolStripMenuItem.Click += new System.EventHandler(this.viewUserToolStripMenuItem_Click);
             // 
@@ -79,26 +86,31 @@
             this.newProjectToolStripMenuItem,
             this.viewProjectsToolStripMenuItem,
             this.assignUsersToolStripMenuItem});
+            this.bugsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.bugsToolStripMenuItem.Name = "bugsToolStripMenuItem";
-            this.bugsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.bugsToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.bugsToolStripMenuItem.Text = "Project";
             // 
             // newProjectToolStripMenuItem
             // 
+            this.newProjectToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
-            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newProjectToolStripMenuItem.Text = "New Project";
+            this.newProjectToolStripMenuItem.Click += new System.EventHandler(this.newProjectToolStripMenuItem_Click);
             // 
             // viewProjectsToolStripMenuItem
             // 
+            this.viewProjectsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.viewProjectsToolStripMenuItem.Name = "viewProjectsToolStripMenuItem";
-            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewProjectsToolStripMenuItem.Text = "View Projects";
             // 
             // assignUsersToolStripMenuItem
             // 
+            this.assignUsersToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.assignUsersToolStripMenuItem.Name = "assignUsersToolStripMenuItem";
-            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.assignUsersToolStripMenuItem.Text = "Assign Users";
             // 
             // AdminDashboard

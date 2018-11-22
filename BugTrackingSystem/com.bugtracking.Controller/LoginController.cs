@@ -18,25 +18,29 @@ namespace BugTrackingSystem.com.bugtracking.Controller
             connectionController = new ConnectionController();
         }
 
-        public int SelectUser(string email, string password)
+        public string[] SelectUser(string email, string password, string type)
         {
-            int u_id = 0;
+            String[] user = new string[4];
 
-            String query = "Select * from user where email = '"+email+"' and password = '"+password+"'";
+            String query = "Select * from user where email = '"+email+"' and password = '"+password+"' and type = '"+type+"'";
 
             if (ConnectionController.OpenConnection() == true)
             {
                 MySqlCommand command = new MySqlCommand(query, ConnectionController.connection);
                 MySqlDataReader reader = command.ExecuteReader();
 
-                while (reader.Read())
+
+                while(reader.Read())
                 {
-                    u_id = (int) reader["user_id"];
+                    user[0] = reader.GetInt32("user_id").ToString();
+                    user[1] = reader.GetString("email");
+                    user[2] = reader.GetString("password");
+                    user[3] = reader.GetString("type");
                 }
             }
             ConnectionController.CloseConnection();
-
-            return u_id;
+            
+            return user;
         }
 
         //Insert statement

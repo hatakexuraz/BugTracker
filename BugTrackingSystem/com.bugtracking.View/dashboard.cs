@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem.com.bugtracking.View
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : MaterialForm
     {
         public Dashboard()
         {
@@ -31,6 +32,11 @@ namespace BugTrackingSystem.com.bugtracking.View
         {
             AssignedBugsForm assignedBugs = new AssignedBugsForm();
             assignedBugs.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

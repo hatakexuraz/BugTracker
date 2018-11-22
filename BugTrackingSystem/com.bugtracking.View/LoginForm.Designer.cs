@@ -40,21 +40,27 @@
             // 
             // btn_cnl
             // 
-            this.btn_cnl.Location = new System.Drawing.Point(218, 137);
+            this.btn_cnl.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_cnl.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_cnl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btn_cnl.Location = new System.Drawing.Point(253, 191);
             this.btn_cnl.Name = "btn_cnl";
             this.btn_cnl.Size = new System.Drawing.Size(89, 30);
             this.btn_cnl.TabIndex = 23;
             this.btn_cnl.Text = "Cancel";
-            this.btn_cnl.UseVisualStyleBackColor = true;
+            this.btn_cnl.UseVisualStyleBackColor = false;
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(20, 137);
+            this.btn_login.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btn_login.Location = new System.Drawing.Point(89, 191);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(89, 30);
             this.btn_login.TabIndex = 22;
             this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_log_Click);
             // 
             // cmb_type
@@ -64,63 +70,70 @@
             this.cmb_type.Items.AddRange(new object[] {
             "Programmer",
             "Tester",
-            "Admin"});
-            this.cmb_type.Location = new System.Drawing.Point(92, 92);
+            "Master"});
+            this.cmb_type.Location = new System.Drawing.Point(107, 146);
             this.cmb_type.Name = "cmb_type";
-            this.cmb_type.Size = new System.Drawing.Size(215, 24);
+            this.cmb_type.Size = new System.Drawing.Size(235, 24);
             this.cmb_type.TabIndex = 21;
             // 
             // txt_pwd
             // 
             this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd.Location = new System.Drawing.Point(92, 56);
+            this.txt_pwd.Location = new System.Drawing.Point(107, 110);
             this.txt_pwd.Name = "txt_pwd";
-            this.txt_pwd.Size = new System.Drawing.Size(215, 22);
+            this.txt_pwd.Size = new System.Drawing.Size(235, 22);
             this.txt_pwd.TabIndex = 20;
+            this.txt_pwd.UseSystemPasswordChar = true;
             // 
             // txt_email
             // 
             this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(92, 21);
+            this.txt_email.Location = new System.Drawing.Point(107, 75);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(215, 22);
+            this.txt_email.Size = new System.Drawing.Size(235, 22);
             this.txt_email.TabIndex = 19;
             // 
             // lbl_post
             // 
             this.lbl_post.AutoSize = true;
+            this.lbl_post.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_post.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_post.Location = new System.Drawing.Point(17, 95);
+            this.lbl_post.Location = new System.Drawing.Point(12, 149);
             this.lbl_post.Name = "lbl_post";
             this.lbl_post.Size = new System.Drawing.Size(40, 16);
             this.lbl_post.TabIndex = 18;
             this.lbl_post.Text = "Type";
+            this.lbl_post.Click += new System.EventHandler(this.lbl_post_Click);
             // 
             // lbl_pwd
             // 
             this.lbl_pwd.AutoSize = true;
+            this.lbl_pwd.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd.Location = new System.Drawing.Point(17, 59);
+            this.lbl_pwd.Location = new System.Drawing.Point(12, 113);
             this.lbl_pwd.Name = "lbl_pwd";
             this.lbl_pwd.Size = new System.Drawing.Size(68, 16);
             this.lbl_pwd.TabIndex = 17;
             this.lbl_pwd.Text = "Password";
+            this.lbl_pwd.Click += new System.EventHandler(this.lbl_pwd_Click);
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
+            this.lbl_email.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.Location = new System.Drawing.Point(17, 21);
+            this.lbl_email.Location = new System.Drawing.Point(12, 75);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(42, 16);
             this.lbl_email.TabIndex = 16;
             this.lbl_email.Text = "Email";
+            this.lbl_email.Click += new System.EventHandler(this.lbl_email_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 191);
+            this.ClientSize = new System.Drawing.Size(352, 231);
             this.Controls.Add(this.btn_cnl);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.cmb_type);

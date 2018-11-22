@@ -39,60 +39,73 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label1.Location = new System.Drawing.Point(23, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.Size = new System.Drawing.Size(92, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project\'s User";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 48);
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label2.Location = new System.Drawing.Point(23, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Project";
             // 
             // cmb_users
             // 
+            this.cmb_users.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.cmb_users.FormattingEnabled = true;
-            this.cmb_users.Location = new System.Drawing.Point(121, 8);
+            this.cmb_users.Location = new System.Drawing.Point(132, 72);
             this.cmb_users.Name = "cmb_users";
-            this.cmb_users.Size = new System.Drawing.Size(262, 21);
+            this.cmb_users.Size = new System.Drawing.Size(262, 23);
             this.cmb_users.TabIndex = 2;
             // 
             // cmb_project
             // 
+            this.cmb_project.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.cmb_project.FormattingEnabled = true;
-            this.cmb_project.Location = new System.Drawing.Point(121, 48);
+            this.cmb_project.Location = new System.Drawing.Point(132, 112);
             this.cmb_project.Name = "cmb_project";
-            this.cmb_project.Size = new System.Drawing.Size(262, 21);
+            this.cmb_project.Size = new System.Drawing.Size(262, 23);
             this.cmb_project.TabIndex = 3;
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(292, 93);
+            this.btn_cancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btn_cancel.Location = new System.Drawing.Point(303, 157);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(91, 34);
             this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.UseVisualStyleBackColor = false;
             // 
             // btn_assign
             // 
-            this.btn_assign.Location = new System.Drawing.Point(145, 93);
+            this.btn_assign.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_assign.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_assign.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btn_assign.Location = new System.Drawing.Point(156, 157);
             this.btn_assign.Name = "btn_assign";
             this.btn_assign.Size = new System.Drawing.Size(91, 34);
             this.btn_assign.TabIndex = 5;
             this.btn_assign.Text = "Assign";
-            this.btn_assign.UseVisualStyleBackColor = true;
+            this.btn_assign.UseVisualStyleBackColor = false;
+            this.btn_assign.Click += new System.EventHandler(this.btn_assign_Click);
             // 
             // AssignUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 139);
+            this.ClientSize = new System.Drawing.Size(412, 214);
             this.Controls.Add(this.btn_assign);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.cmb_project);
@@ -100,7 +113,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AssignUser";
-            this.Text = "AssignUSer";
+            this.Text = "Assign User";
+            this.Load += new System.EventHandler(this.AssignUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

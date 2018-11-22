@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,21 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
 {
-    public partial class AssignUser : Form
+    public partial class AssignUser : MaterialForm
     {
         public AssignUser()
         {
             InitializeComponent();
+        }
+
+        private void btn_assign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AssignUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

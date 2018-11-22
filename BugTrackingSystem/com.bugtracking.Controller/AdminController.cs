@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,8 @@ namespace BugTrackingSystem.com.bugtracking.Controller
     class AdminController
     {
         private ConnectionController connectionController;
-        
+        private MySqlDataAdapter sqlDa;
+
         public AdminController() {
             connectionController = new ConnectionController();
         }
@@ -30,6 +32,17 @@ namespace BugTrackingSystem.com.bugtracking.Controller
                 return result;
             }
             return result;
+        }
+
+        public DataTable retriveUser()
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select * from user";
+            
+            sqlDa = new MySqlDataAdapter(query, ConnectionController.connection);
+            sqlDa.Fill(dataTable);
+
+            return dataTable;
         }
 
         public int addProject(string projectName, DateTime startDate, DateTime endDate, string projectDesc)

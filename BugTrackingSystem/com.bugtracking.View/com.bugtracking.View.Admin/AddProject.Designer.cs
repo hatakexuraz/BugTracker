@@ -43,31 +43,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label1.Location = new System.Drawing.Point(21, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name";
             // 
             // txt_pro_name
             // 
-            this.txt_pro_name.Location = new System.Drawing.Point(113, 9);
+            this.txt_pro_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.txt_pro_name.Location = new System.Drawing.Point(122, 74);
             this.txt_pro_name.Name = "txt_pro_name";
-            this.txt_pro_name.Size = new System.Drawing.Size(244, 20);
+            this.txt_pro_name.Size = new System.Drawing.Size(244, 21);
             this.txt_pro_name.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 129);
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label2.Location = new System.Drawing.Point(21, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Project desc.";
             // 
             // txt_pro_desc
             // 
-            this.txt_pro_desc.Location = new System.Drawing.Point(113, 132);
+            this.txt_pro_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.txt_pro_desc.Location = new System.Drawing.Point(122, 256);
             this.txt_pro_desc.Name = "txt_pro_desc";
             this.txt_pro_desc.Size = new System.Drawing.Size(244, 129);
             this.txt_pro_desc.TabIndex = 3;
@@ -75,59 +81,72 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(273, 290);
+            this.btn_cancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btn_cancel.Location = new System.Drawing.Point(282, 409);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(84, 31);
             this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.UseVisualStyleBackColor = false;
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(142, 290);
+            this.btn_add.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btn_add.Location = new System.Drawing.Point(151, 409);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(84, 31);
             this.btn_add.TabIndex = 5;
-            this.btn_add.Text = "Cancel";
-            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 49);
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label3.Location = new System.Drawing.Point(21, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Start date";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 87);
+            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label4.Location = new System.Drawing.Point(21, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "End date";
             // 
             // end_date
             // 
-            this.end_date.Location = new System.Drawing.Point(113, 87);
+            this.end_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.end_date.Location = new System.Drawing.Point(122, 152);
             this.end_date.Name = "end_date";
-            this.end_date.Size = new System.Drawing.Size(244, 20);
+            this.end_date.Size = new System.Drawing.Size(244, 21);
             this.end_date.TabIndex = 10;
             // 
             // start_date
             // 
-            this.start_date.Location = new System.Drawing.Point(113, 49);
+            this.start_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.start_date.Location = new System.Drawing.Point(122, 114);
             this.start_date.Name = "start_date";
-            this.start_date.Size = new System.Drawing.Size(244, 20);
+            this.start_date.Size = new System.Drawing.Size(244, 21);
             this.start_date.TabIndex = 11;
             // 
             // AddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 333);
+            this.ClientSize = new System.Drawing.Size(426, 479);
             this.Controls.Add(this.start_date);
             this.Controls.Add(this.end_date);
             this.Controls.Add(this.label4);

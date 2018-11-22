@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
 {
-    public partial class AdminDashboard : Form
+    public partial class AdminDashboard : MaterialForm
     {
         public AdminDashboard()
         {
@@ -27,6 +28,17 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
         {
             ViewUser viewUser = new ViewUser();
             viewUser.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void newProjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProject addProject = new AddProject();
+            addProject.Show();
         }
     }
 }

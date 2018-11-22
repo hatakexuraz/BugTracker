@@ -45,79 +45,99 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 56);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label1.Location = new System.Drawing.Point(12, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 14;
             this.label1.Text = "Total errors";
             // 
             // lbl_ttlerr
             // 
             this.lbl_ttlerr.AutoSize = true;
-            this.lbl_ttlerr.Location = new System.Drawing.Point(137, 56);
+            this.lbl_ttlerr.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_ttlerr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.lbl_ttlerr.Location = new System.Drawing.Point(126, 109);
             this.lbl_ttlerr.Name = "lbl_ttlerr";
-            this.lbl_ttlerr.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ttlerr.Size = new System.Drawing.Size(15, 16);
             this.lbl_ttlerr.TabIndex = 15;
             this.lbl_ttlerr.Text = "0";
             // 
             // lbl_unreerr
             // 
             this.lbl_unreerr.AutoSize = true;
-            this.lbl_unreerr.Location = new System.Drawing.Point(137, 135);
+            this.lbl_unreerr.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_unreerr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.lbl_unreerr.Location = new System.Drawing.Point(126, 188);
             this.lbl_unreerr.Name = "lbl_unreerr";
-            this.lbl_unreerr.Size = new System.Drawing.Size(13, 13);
+            this.lbl_unreerr.Size = new System.Drawing.Size(15, 16);
             this.lbl_unreerr.TabIndex = 19;
             this.lbl_unreerr.Text = "0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label2.Location = new System.Drawing.Point(12, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(105, 16);
             this.label2.TabIndex = 16;
             this.label2.Text = "Resolved errors";
             // 
             // lbl_reerr
             // 
             this.lbl_reerr.AutoSize = true;
-            this.lbl_reerr.Location = new System.Drawing.Point(137, 93);
+            this.lbl_reerr.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_reerr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.lbl_reerr.Location = new System.Drawing.Point(126, 146);
             this.lbl_reerr.Name = "lbl_reerr";
-            this.lbl_reerr.Size = new System.Drawing.Size(13, 13);
+            this.lbl_reerr.Size = new System.Drawing.Size(15, 16);
             this.lbl_reerr.TabIndex = 18;
             this.lbl_reerr.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 135);
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label3.Location = new System.Drawing.Point(12, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.Size = new System.Drawing.Size(116, 16);
             this.label3.TabIndex = 17;
             this.label3.Text = "Unresolved errors";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.errorsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(-1, 65);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(59, 24);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // errorsToolStripMenuItem
             // 
+            this.errorsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.errorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newErrorToolStripMenuItem,
             this.viewBugsToolStripMenuItem,
             this.assignedBugsToolStripMenuItem});
+            this.errorsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.errorsToolStripMenuItem.Name = "errorsToolStripMenuItem";
-            this.errorsToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.errorsToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.errorsToolStripMenuItem.Text = "Bugs";
             // 
             // newErrorToolStripMenuItem
             // 
+            this.newErrorToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.newErrorToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.newErrorToolStripMenuItem.Name = "newErrorToolStripMenuItem";
             this.newErrorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newErrorToolStripMenuItem.Text = "New Bugs";
@@ -125,12 +145,16 @@
             // 
             // viewBugsToolStripMenuItem
             // 
+            this.viewBugsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.viewBugsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.viewBugsToolStripMenuItem.Name = "viewBugsToolStripMenuItem";
             this.viewBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewBugsToolStripMenuItem.Text = "View Bugs";
             // 
             // assignedBugsToolStripMenuItem
             // 
+            this.assignedBugsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.assignedBugsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.assignedBugsToolStripMenuItem.Name = "assignedBugsToolStripMenuItem";
             this.assignedBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.assignedBugsToolStripMenuItem.Text = "Assigned Bugs";

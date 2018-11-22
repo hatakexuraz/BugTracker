@@ -48,6 +48,7 @@
             this.Controls.Add(this.tbl_users);
             this.Name = "ViewUser";
             this.Text = "ViewUser";
+            this.Load += new System.EventHandler(this.ViewUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
             this.ResumeLayout(false);
 

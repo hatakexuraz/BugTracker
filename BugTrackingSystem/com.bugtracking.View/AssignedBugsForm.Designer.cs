@@ -50,6 +50,7 @@
             this.Controls.Add(this.tbl_view_bugs);
             this.Name = "AssignedBugsForm";
             this.Text = "Assigned Bugs";
+            this.Load += new System.EventHandler(this.AssignedBugsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_view_bugs)).EndInit();
             this.ResumeLayout(false);
 

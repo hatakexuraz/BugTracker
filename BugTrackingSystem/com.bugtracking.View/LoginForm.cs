@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BugTrackingSystem.com.bugtracking.Controller;
 using BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin;
+using MaterialSkin.Controls;
 
 namespace BugTrackingSystem.com.bugtracking.View
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MaterialForm
     {
         public LoginForm()
         {
@@ -34,16 +35,17 @@ namespace BugTrackingSystem.com.bugtracking.View
         private void identifyAdmin()
         {
             LoginController loginController = new LoginController();
-            int user;
+            //int user;
+            String[] user = new String[4];
             String email, password, type;
 
             email = txt_email.Text;
             password = txt_pwd.Text;
             type = cmb_type.GetItemText(this.cmb_type.SelectedItem);
 
-            user = loginController.SelectUser(txt_email.Text, txt_pwd.Text);
+            Array.Copy(loginController.SelectUser(email, password, type), user, 4);
 
-            if (type.Equals("Admin") && user != 0)
+            /*if (type.Equals("Admin") && user.Length != 0)
             {
                 AdminDashboard adminDashboard = new AdminDashboard();
                 adminDashboard.Show();
@@ -56,7 +58,45 @@ namespace BugTrackingSystem.com.bugtracking.View
             else
             {
                 MessageBox.Show("username or password invalid!!");
+            }*/
+
+            Global.User_id = Convert.ToInt32(user[0]);
+            Global.Email = user[1];
+            Global.Type = user[3];
+
+
+            try
+            {   
+                if (user[1].Equals(email) && type.Equals("Master"))
+                {
+                    AdminDashboard adminDashboard = new AdminDashboard();
+                    adminDashboard.Show();
+                }
+                else if (user[1].Equals(email) && user[3].Equals(type))
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Visible = true;
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Invalid email, password or type!!");
+            }
+        }
+
+        private void lbl_post_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_pwd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_email_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

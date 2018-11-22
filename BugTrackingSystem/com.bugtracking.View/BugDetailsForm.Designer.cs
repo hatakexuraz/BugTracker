@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_pr_name
             // 
@@ -120,7 +121,7 @@
             this.lbl_status.TabIndex = 8;
             this.lbl_status.Text = "Not Fixed";
             // 
-            // BugDetails
+            // BugDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +135,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_pr_name);
             this.Controls.Add(this.label1);
-            this.Name = "BugDetails";
+            this.Name = "BugDetailsForm";
             this.Text = "Bug";
             this.ResumeLayout(false);
             this.PerformLayout();
