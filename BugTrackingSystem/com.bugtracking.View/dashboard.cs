@@ -30,11 +30,16 @@ namespace BugTrackingSystem.com.bugtracking.View
 
         private void assignedBugsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AssignedBugsForm assignedBugs = new AssignedBugsForm();
+            ViewBugs assignedBugs = new ViewBugs();
             assignedBugs.Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void viewBugsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

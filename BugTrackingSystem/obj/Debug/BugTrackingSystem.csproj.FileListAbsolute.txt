@@ -6,7 +6,6 @@ C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\Bu
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.exe
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.pdb
-C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.AssignedBugsForm.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.BugDetailsForm.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.Dashboard.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.LoginForm.resources
@@ -22,3 +21,4 @@ C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\Bu
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.AssignUser.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin.ViewUser.resources
 C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\bin\Debug\MaterialSkin.dll
+C:\Users\hatake_47\source\repos\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.com.bugtracking.View.ViewBugs.resources

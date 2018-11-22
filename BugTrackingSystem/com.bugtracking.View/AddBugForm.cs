@@ -15,8 +15,8 @@ namespace BugTrackingSystem.com.bugtracking.View
 {
     public partial class AddBugForm : MaterialForm
     {
-        private MemoryStream memory = new MemoryStream();
-        private PictureBox pictureBox = new PictureBox();
+        private MemoryStream memory;
+        private PictureBox pictureBox;
         private int project_id, user_id;
 
         public AddBugForm()
@@ -51,17 +51,32 @@ namespace BugTrackingSystem.com.bugtracking.View
 
         private void btn_add_bug_Click(object sender, EventArgs e)
         {
+            memory = new MemoryStream();
+
             pictureBox.Image.Save(memory, pictureBox.Image.RawFormat);
             byte[] img = memory.ToArray();
-
+            String method_name, class_name;
             String state, severity, bug_sourcecode;
+            String bug_title = txt_bug_title.Text;
+
+            int result = 0;
+
+            int line_no = Convert.ToInt32(txt_line.Text);
+
+            method_name = txt_method.Text;
+            class_name = txt_class.Text;
 
             bug_sourcecode = txt_bug_code.Text;
             state = cmb_bug_state.GetItemText(this.cmb_bug_state.SelectedItem);
             severity = cmb_severity.GetItemText(this.cmb_severity.SelectedItem);
 
             UserController userController = new UserController();
-            userController.insertBug(bug_sourcecode, img, state, severity, project_id, Global.User_id);
+            result = userController.insertBug(bug_title, bug_sourcecode, img, state, severity, line_no, method_name, class_name, Global.User_id);
+
+            if (result != 0)
+            {
+                MessageBox.Show("Bug inserted successfully.");
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -96,6 +111,8 @@ namespace BugTrackingSystem.com.bugtracking.View
             if (openFile.ShowDialog() == DialogResult.OK)
             {
                 txt_pic_name.Text = System.IO.Path.GetFileName(openFile.FileName);
+                pictureBox = new PictureBox();
+                pictureBox.Image = Image.FromFile(openFile.FileName);
             }
         }
     }

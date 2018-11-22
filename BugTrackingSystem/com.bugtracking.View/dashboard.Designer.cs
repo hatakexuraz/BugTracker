@@ -37,7 +37,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.errorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignedBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +116,7 @@
             this.errorsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(-1, 65);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(59, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(179, 24);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -127,7 +126,6 @@
             this.errorsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.errorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newErrorToolStripMenuItem,
-            this.viewBugsToolStripMenuItem,
             this.assignedBugsToolStripMenuItem});
             this.errorsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.errorsToolStripMenuItem.Name = "errorsToolStripMenuItem";
@@ -143,21 +141,13 @@
             this.newErrorToolStripMenuItem.Text = "New Bugs";
             this.newErrorToolStripMenuItem.Click += new System.EventHandler(this.newErrorToolStripMenuItem_Click);
             // 
-            // viewBugsToolStripMenuItem
-            // 
-            this.viewBugsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.viewBugsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.viewBugsToolStripMenuItem.Name = "viewBugsToolStripMenuItem";
-            this.viewBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.viewBugsToolStripMenuItem.Text = "View Bugs";
-            // 
             // assignedBugsToolStripMenuItem
             // 
             this.assignedBugsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.assignedBugsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.assignedBugsToolStripMenuItem.Name = "assignedBugsToolStripMenuItem";
             this.assignedBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.assignedBugsToolStripMenuItem.Text = "Assigned Bugs";
+            this.assignedBugsToolStripMenuItem.Text = "View Bugs";
             this.assignedBugsToolStripMenuItem.Click += new System.EventHandler(this.assignedBugsToolStripMenuItem_Click);
             // 
             // Dashboard
@@ -192,7 +182,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem errorsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newErrorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewBugsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assignedBugsToolStripMenuItem;
     }
 }
