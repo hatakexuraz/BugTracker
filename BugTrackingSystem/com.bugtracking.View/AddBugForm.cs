@@ -17,7 +17,7 @@ namespace BugTrackingSystem.com.bugtracking.View
     {
         private MemoryStream memory;
         private PictureBox pictureBox;
-        private int project_id, user_id;
+        private int user_id;
 
         public AddBugForm()
         {

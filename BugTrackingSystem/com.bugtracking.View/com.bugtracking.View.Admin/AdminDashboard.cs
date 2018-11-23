@@ -1,5 +1,7 @@
 ﻿using MaterialSkin.Controls;
 using System;
+using CefSharp;
+using CefSharp.WinForms;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,6 +58,22 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
         private void btn_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bugsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void versionControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VersionControl versionControl = new VersionControl();
+            versionControl.Show();
         }
     }
 }

@@ -36,6 +36,7 @@
             this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versionControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_close = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,10 +48,11 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
-            this.bugsToolStripMenuItem});
+            this.bugsToolStripMenuItem,
+            this.versionControlToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(3, 64);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(119, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(230, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -91,12 +93,13 @@
             this.bugsToolStripMenuItem.Name = "bugsToolStripMenuItem";
             this.bugsToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.bugsToolStripMenuItem.Text = "Project";
+            this.bugsToolStripMenuItem.Click += new System.EventHandler(this.bugsToolStripMenuItem_Click);
             // 
             // newProjectToolStripMenuItem
             // 
             this.newProjectToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
-            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.newProjectToolStripMenuItem.Text = "New Project";
             this.newProjectToolStripMenuItem.Click += new System.EventHandler(this.newProjectToolStripMenuItem_Click);
             // 
@@ -104,7 +107,7 @@
             // 
             this.viewProjectsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.viewProjectsToolStripMenuItem.Name = "viewProjectsToolStripMenuItem";
-            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.viewProjectsToolStripMenuItem.Text = "View Projects";
             this.viewProjectsToolStripMenuItem.Click += new System.EventHandler(this.viewProjectsToolStripMenuItem_Click);
             // 
@@ -112,9 +115,16 @@
             // 
             this.assignUsersToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.assignUsersToolStripMenuItem.Name = "assignUsersToolStripMenuItem";
-            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.assignUsersToolStripMenuItem.Text = "Assign Users";
             this.assignUsersToolStripMenuItem.Click += new System.EventHandler(this.assignUsersToolStripMenuItem_Click);
+            // 
+            // versionControlToolStripMenuItem
+            // 
+            this.versionControlToolStripMenuItem.Name = "versionControlToolStripMenuItem";
+            this.versionControlToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.versionControlToolStripMenuItem.Text = "Version Control";
+            this.versionControlToolStripMenuItem.Click += new System.EventHandler(this.versionControlToolStripMenuItem_Click);
             // 
             // btn_close
             // 
@@ -141,6 +151,7 @@
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Dashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -159,5 +170,6 @@
         private System.Windows.Forms.ToolStripMenuItem viewProjectsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assignUsersToolStripMenuItem;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.ToolStripMenuItem versionControlToolStripMenuItem;
     }
 }

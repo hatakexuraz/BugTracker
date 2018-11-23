@@ -34,6 +34,8 @@
             this.assignedBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_close = new System.Windows.Forms.Button();
+            this.versionControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.web_browser_control = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,10 +46,11 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.errorsToolStripMenuItem,
-            this.logoutToolStripMenuItem});
+            this.logoutToolStripMenuItem,
+            this.versionControlToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(-1, 65);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(120, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(351, 24);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -102,12 +105,28 @@
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // versionControlToolStripMenuItem
+            // 
+            this.versionControlToolStripMenuItem.Name = "versionControlToolStripMenuItem";
+            this.versionControlToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.versionControlToolStripMenuItem.Text = "Version Control";
+            this.versionControlToolStripMenuItem.Click += new System.EventHandler(this.versionControlToolStripMenuItem_Click);
+            // 
+            // web_browser_control
+            // 
+            this.web_browser_control.Location = new System.Drawing.Point(12, 92);
+            this.web_browser_control.MinimumSize = new System.Drawing.Size(20, 20);
+            this.web_browser_control.Name = "web_browser_control";
+            this.web_browser_control.Size = new System.Drawing.Size(1061, 468);
+            this.web_browser_control.TabIndex = 22;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 572);
             this.ControlBox = false;
+            this.Controls.Add(this.web_browser_control);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Dashboard";
@@ -128,5 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem assignedBugsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.ToolStripMenuItem versionControlToolStripMenuItem;
+        private System.Windows.Forms.WebBrowser web_browser_control;
     }
 }

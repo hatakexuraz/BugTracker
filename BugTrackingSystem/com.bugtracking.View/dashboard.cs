@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿using BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -64,6 +65,12 @@ namespace BugTrackingSystem.com.bugtracking.View
         private void btn_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void versionControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VersionControl versionControl = new VersionControl();
+            versionControl.Show();
         }
     }
 }

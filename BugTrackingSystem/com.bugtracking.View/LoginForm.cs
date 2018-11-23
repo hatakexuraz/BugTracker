@@ -79,7 +79,7 @@ namespace BugTrackingSystem.com.bugtracking.View
                     dashboard.Visible = true;
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Invalid email, password or type!!");
             }
