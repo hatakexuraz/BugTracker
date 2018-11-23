@@ -27,5 +27,10 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
         {
 
         }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

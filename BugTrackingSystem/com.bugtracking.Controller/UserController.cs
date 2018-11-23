@@ -12,11 +12,26 @@ namespace BugTrackingSystem.com.bugtracking.Controller
     {
         private ConnectionController connectionController;
         private MySqlDataAdapter sqlDa;
+        private MySqlDataReader reader;
         private MySqlCommand command;
 
         public UserController()
         {
             connectionController = new ConnectionController();
+        }
+
+        public void InsertBugHistory(int bug_id, string date, string status)
+        {
+            string query = "insert into bughistory(user_id, bug_id, date, status) values('"+Global.User_id+"', '"+bug_id+"', '"+date+"', '"+status+"')";
+
+            if (ConnectionController.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, ConnectionController.connection);
+
+                cmd.ExecuteNonQuery();
+
+                ConnectionController.CloseConnection();
+            }
         }
 
         public DataTable retriveBugs()
@@ -31,7 +46,38 @@ namespace BugTrackingSystem.com.bugtracking.Controller
 
             return dataTable;
         }
-               
+
+        public DataTable retriveBugsDet(int bug_id)
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select * from bugs where bug_id = '" + bug_id + "' ";
+
+            command = new MySqlCommand(query, ConnectionController.connection);
+            sqlDa = new MySqlDataAdapter(command);
+
+            sqlDa.Fill(dataTable);
+
+            return dataTable;
+        }
+
+        public int  RetriveBugsId(string bug_title)
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select bug_id from bugs where bug_title = '" + bug_title + "' ";
+
+            command = new MySqlCommand(query, ConnectionController.connection);
+
+            using (reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    return Convert.ToInt32(reader["bug_id"]);
+                }
+            }
+
+            return 0;
+        }
+
         public int insertBug(String bug_title, String source_code, byte[] image, string state, string severity, int line_no, string method_name, 
             String class_name, int user_id)
         {
@@ -62,7 +108,10 @@ namespace BugTrackingSystem.com.bugtracking.Controller
             command.Parameters["@class_name"].Value = class_name;
             command.Parameters["@user"].Value = user_id;
 
-            result = command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
+
+            result = RetriveBugsId(bug_title);
+            ConnectionController.CloseConnection();
 
             return result;
         }

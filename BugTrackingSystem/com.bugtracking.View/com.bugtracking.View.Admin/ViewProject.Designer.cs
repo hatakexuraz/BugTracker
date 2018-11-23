@@ -1,6 +1,6 @@
 ﻿namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
 {
-    partial class ViewUser
+    partial class ViewProject
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbl_users = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).BeginInit();
+            this.tbl_projects = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_projects)).BeginInit();
             this.SuspendLayout();
             // 
-            // tbl_users
+            // tbl_projects
             // 
-            this.tbl_users.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.tbl_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tbl_users.Location = new System.Drawing.Point(1, 65);
-            this.tbl_users.Name = "tbl_users";
-            this.tbl_users.Size = new System.Drawing.Size(613, 290);
-            this.tbl_users.TabIndex = 0;
-            this.tbl_users.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_users_CellContentClick);
+            this.tbl_projects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbl_projects.Location = new System.Drawing.Point(0, 65);
+            this.tbl_projects.Name = "tbl_projects";
+            this.tbl_projects.Size = new System.Drawing.Size(563, 184);
+            this.tbl_projects.TabIndex = 0;
+            this.tbl_projects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_projects_CellContentClick);
             // 
-            // ViewUser
+            // ViewProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 357);
-            this.Controls.Add(this.tbl_users);
-            this.Name = "ViewUser";
+            this.ClientSize = new System.Drawing.Size(565, 251);
+            this.Controls.Add(this.tbl_projects);
+            this.Name = "ViewProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ViewUser";
-            this.Load += new System.EventHandler(this.ViewUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_users)).EndInit();
+            this.Text = "ViewProject";
+            this.Load += new System.EventHandler(this.ViewProject_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_projects)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView tbl_users;
+        private System.Windows.Forms.DataGridView tbl_projects;
     }
 }

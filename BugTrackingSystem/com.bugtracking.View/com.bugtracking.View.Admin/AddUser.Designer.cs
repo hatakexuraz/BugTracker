@@ -170,6 +170,7 @@
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label1);
             this.Name = "AddUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.AddUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

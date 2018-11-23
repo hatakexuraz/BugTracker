@@ -60,6 +60,18 @@
     <Compile Include="com.bugtracking.View\AddBugForm.Designer.cs">
       <DependentUpon>AddBugForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewProject.Designer.cs">
+      <DependentUpon>ViewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com.bugtracking.View\ViewBugHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com.bugtracking.View\ViewBugHistory.Designer.cs">
+      <DependentUpon>ViewBugHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="com.bugtracking.View\ViewBugs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="com.bugtracking.View\AddBugForm.resx">
       <DependentUpon>AddBugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\com.bugtracking.View.Admin\ViewProject.resx">
+      <DependentUpon>ViewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com.bugtracking.View\ViewBugHistory.resx">
+      <DependentUpon>ViewBugHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="com.bugtracking.View\ViewBugs.resx">
       <DependentUpon>ViewBugs.cs</DependentUpon>

@@ -58,6 +58,7 @@ namespace BugTrackingSystem.com.bugtracking.View
             String method_name, class_name;
             String state, severity, bug_sourcecode;
             String bug_title = txt_bug_title.Text;
+            String date = DateTime.Today.ToString("yyyy-MM-dd"); ;
 
             int result = 0;
 
@@ -76,6 +77,7 @@ namespace BugTrackingSystem.com.bugtracking.View
             if (result != 0)
             {
                 MessageBox.Show("Bug inserted successfully.");
+                userController.InsertBugHistory(result, date, state);
             }
         }
 
@@ -101,7 +103,7 @@ namespace BugTrackingSystem.com.bugtracking.View
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void btn_browse_Click(object sender, EventArgs e)

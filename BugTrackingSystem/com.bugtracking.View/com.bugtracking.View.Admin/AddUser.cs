@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿using BugTrackingSystem.com.bugtracking.Controller;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,7 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
             String email;
             String password, re_pass;
             String type;
+            int result = 0;
 
             email = txt_email.Text;
             password = txt_pass.Text;
@@ -30,6 +32,31 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
             type = cmb_type.GetItemText(this.cmb_type.SelectedItem);
 
 
+            if (password.Equals(re_pass))
+            {
+
+                if (email.Equals(""))
+                {
+                    MessageBox.Show("Please fill all fields.");
+                }
+                else
+                {
+                    AdminController adminController = new AdminController();
+                    result = adminController.insertUser(email, password, type);
+
+                    if (result != 0)
+                    {
+                        MessageBox.Show("User added successfully");
+                        txt_email.Text = "";
+                        txt_pass.Text = "";
+                        txt_repass.Text = "";
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Password didn't match.");
+            }
         }
 
         private void AddUser_Load(object sender, EventArgs e)
@@ -54,7 +81,7 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -49,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(842, 310);
             this.Controls.Add(this.tbl_view_bugs);
             this.Name = "ViewBugs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assigned Bugs";
             this.Load += new System.EventHandler(this.AssignedBugsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_view_bugs)).EndInit();

@@ -64,7 +64,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label2.Location = new System.Drawing.Point(21, 253);
+            this.label2.Location = new System.Drawing.Point(21, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 2;
@@ -73,7 +73,7 @@
             // txt_pro_desc
             // 
             this.txt_pro_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.txt_pro_desc.Location = new System.Drawing.Point(122, 256);
+            this.txt_pro_desc.Location = new System.Drawing.Point(122, 194);
             this.txt_pro_desc.Name = "txt_pro_desc";
             this.txt_pro_desc.Size = new System.Drawing.Size(244, 129);
             this.txt_pro_desc.TabIndex = 3;
@@ -84,19 +84,20 @@
             this.btn_cancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btn_cancel.Location = new System.Drawing.Point(282, 409);
+            this.btn_cancel.Location = new System.Drawing.Point(282, 342);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(84, 31);
             this.btn_cancel.TabIndex = 4;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_add
             // 
             this.btn_add.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btn_add.Location = new System.Drawing.Point(151, 409);
+            this.btn_add.Location = new System.Drawing.Point(151, 342);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(84, 31);
             this.btn_add.TabIndex = 5;
@@ -146,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 479);
+            this.ClientSize = new System.Drawing.Size(384, 394);
             this.Controls.Add(this.start_date);
             this.Controls.Add(this.end_date);
             this.Controls.Add(this.label4);
@@ -158,6 +159,7 @@
             this.Controls.Add(this.txt_pro_name);
             this.Controls.Add(this.label1);
             this.Name = "AddProject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProject";
             this.ResumeLayout(false);
             this.PerformLayout();

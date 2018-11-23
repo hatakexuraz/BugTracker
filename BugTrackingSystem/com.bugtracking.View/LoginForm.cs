@@ -24,6 +24,7 @@ namespace BugTrackingSystem.com.bugtracking.View
         {
             identifyAdmin();
 
+            this.Hide();
             //Dashboard dashboard = new Dashboard();
             //dashboard.Visible = true;
 
@@ -97,6 +98,11 @@ namespace BugTrackingSystem.com.bugtracking.View
         private void lbl_email_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_cnl_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -49,6 +49,7 @@
             this.btn_cnl.TabIndex = 23;
             this.btn_cnl.Text = "Cancel";
             this.btn_cnl.UseVisualStyleBackColor = false;
+            this.btn_cnl.Click += new System.EventHandler(this.btn_cnl_Click);
             // 
             // btn_login
             // 
@@ -143,6 +144,7 @@
             this.Controls.Add(this.lbl_pwd);
             this.Controls.Add(this.lbl_email);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

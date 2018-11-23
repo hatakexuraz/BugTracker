@@ -40,5 +40,22 @@ namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
             AddProject addProject = new AddProject();
             addProject.Show();
         }
+
+        private void viewProjectsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewProject viewProject = new ViewProject();
+            viewProject.Show();
+        }
+
+        private void assignUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AssignUser assignUser = new AssignUser();
+            assignUser.Show();
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

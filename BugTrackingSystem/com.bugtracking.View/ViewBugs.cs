@@ -23,16 +23,22 @@ namespace BugTrackingSystem.com.bugtracking.View
             userController = new UserController();
 
             tbl_view_bugs.DataSource = userController.retriveBugs();
+            Console.WriteLine(tbl_view_bugs.SelectedRows.Count);
+            Console.WriteLine(tbl_view_bugs.SelectedColumns.Count);
         }
 
         private void tbl_view_bugs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int bug_id = 0;
 
+            this.Hide();
+
+            BugDetailsForm bugDetails = new BugDetailsForm(bug_id);
+            bugDetails.Show();
         }
 
         private void AssignedBugsForm_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

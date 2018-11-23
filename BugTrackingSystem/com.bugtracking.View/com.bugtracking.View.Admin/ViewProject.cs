@@ -12,25 +12,23 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem.com.bugtracking.View.com.bugtracking.View.Admin
 {
-    public partial class ViewUser : MaterialForm
+    public partial class ViewProject : MaterialForm
     {
-        private AdminController admin;
+        AdminController admin = new AdminController();
 
-        public ViewUser()
+        public ViewProject()
         {
             InitializeComponent();
 
-            admin = new AdminController();
-
-            tbl_users.DataSource = admin.retriveUser();
+            tbl_projects.DataSource = admin.retriveProjects();
         }
 
-        private void ViewUser_Load(object sender, EventArgs e)
+        private void ViewProject_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void tbl_users_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void tbl_projects_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

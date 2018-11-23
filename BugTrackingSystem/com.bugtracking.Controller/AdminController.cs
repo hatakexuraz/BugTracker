@@ -45,7 +45,7 @@ namespace BugTrackingSystem.com.bugtracking.Controller
             return dataTable;
         }
 
-        public int addProject(string projectName, DateTime startDate, DateTime endDate, string projectDesc)
+        public int addProject(string projectName, String startDate, String endDate, string projectDesc)
         {
             int result = 0;
             string query = "insert into project(project_name, start_date, end_date, project_desc) " +
@@ -62,6 +62,19 @@ namespace BugTrackingSystem.com.bugtracking.Controller
                 return result;
             }
             return result;
+        }
+
+        public DataTable retriveProjects()
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select * from project";
+
+            MySqlCommand command = new MySqlCommand(query, ConnectionController.connection);
+            sqlDa = new MySqlDataAdapter(command);
+
+            sqlDa.Fill(dataTable);
+
+            return dataTable;
         }
     }
 }

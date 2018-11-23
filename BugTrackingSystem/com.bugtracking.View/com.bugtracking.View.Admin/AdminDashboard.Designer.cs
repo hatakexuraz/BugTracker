@@ -36,6 +36,7 @@
             this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewProjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_close = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.bugsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(3, 64);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(239, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(119, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -105,6 +106,7 @@
             this.viewProjectsToolStripMenuItem.Name = "viewProjectsToolStripMenuItem";
             this.viewProjectsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewProjectsToolStripMenuItem.Text = "View Projects";
+            this.viewProjectsToolStripMenuItem.Click += new System.EventHandler(this.viewProjectsToolStripMenuItem_Click);
             // 
             // assignUsersToolStripMenuItem
             // 
@@ -112,15 +114,32 @@
             this.assignUsersToolStripMenuItem.Name = "assignUsersToolStripMenuItem";
             this.assignUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.assignUsersToolStripMenuItem.Text = "Assign Users";
+            this.assignUsersToolStripMenuItem.Click += new System.EventHandler(this.assignUsersToolStripMenuItem_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.Red;
+            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Location = new System.Drawing.Point(795, -1);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(29, 23);
+            this.btn_close.TabIndex = 1;
+            this.btn_close.Text = "x";
+            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 426);
+            this.ControlBox = false;
+            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Dashboard";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -139,5 +158,6 @@
         private System.Windows.Forms.ToolStripMenuItem newProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewProjectsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assignUsersToolStripMenuItem;
+        private System.Windows.Forms.Button btn_close;
     }
 }
