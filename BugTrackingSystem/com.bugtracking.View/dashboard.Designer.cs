@@ -33,8 +33,8 @@
             this.newErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assignedBugsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_close = new System.Windows.Forms.Button();
             this.versionControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_close = new System.Windows.Forms.Button();
             this.web_browser_control = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,8 +46,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.errorsToolStripMenuItem,
-            this.logoutToolStripMenuItem,
-            this.versionControlToolStripMenuItem});
+            this.versionControlToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(-1, 65);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(351, 24);
@@ -92,6 +92,13 @@
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
+            // versionControlToolStripMenuItem
+            // 
+            this.versionControlToolStripMenuItem.Name = "versionControlToolStripMenuItem";
+            this.versionControlToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.versionControlToolStripMenuItem.Text = "Version Control";
+            this.versionControlToolStripMenuItem.Click += new System.EventHandler(this.versionControlToolStripMenuItem_Click);
+            // 
             // btn_close
             // 
             this.btn_close.BackColor = System.Drawing.Color.Red;
@@ -104,13 +111,6 @@
             this.btn_close.Text = "x";
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // versionControlToolStripMenuItem
-            // 
-            this.versionControlToolStripMenuItem.Name = "versionControlToolStripMenuItem";
-            this.versionControlToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.versionControlToolStripMenuItem.Text = "Version Control";
-            this.versionControlToolStripMenuItem.Click += new System.EventHandler(this.versionControlToolStripMenuItem_Click);
             // 
             // web_browser_control
             // 

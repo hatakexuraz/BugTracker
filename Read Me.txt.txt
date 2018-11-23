@@ -1,0 +1,9 @@
+-------------------Bug Tracking System-------------------
+----For x64 windows platform----
+---------------------------------------------------------
+Before running this application
+-Create database and table by importing .sql file provided with the file.
+-Open up XAMPP and start MySQL server.
+	Then
+Enjoy the application
+-------------------Thank You-------------------

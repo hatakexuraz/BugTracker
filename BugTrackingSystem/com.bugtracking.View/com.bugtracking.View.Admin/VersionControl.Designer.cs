@@ -52,6 +52,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.btn_close);
             this.Name = "VersionControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VersionControl";
             this.Load += new System.EventHandler(this.VersionControl_Load);
             this.ResumeLayout(false);
